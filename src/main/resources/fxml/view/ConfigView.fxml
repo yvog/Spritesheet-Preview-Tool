@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1" stylesheets="/css/view.css" GridPane.vgrow="NEVER" GridPane.hgrow="NEVER"
+          prefWidth="680"
+          prefHeight="400">
+
+    <children>
+
+        <GridPane alignment="BASELINE_LEFT" hgap="10" vgap="25">
+            <children>
+                <Label fx:id="titleLabel" id="titleLabel" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+
+                <HBox prefWidth="320" GridPane.columnIndex="0" GridPane.rowIndex="1" spacing="10">
+                    <children>
+                        <TextField fx:id="pathField" editable="false" id="textfield" prefWidth="200"/>
+                        <Button text="Choose image" fx:id="chooseImageButton" id="button" onAction="#onChooseFile"/>
+                    </children>
+                </HBox>
+
+                <HBox prefWidth="320" GridPane.columnIndex="0" GridPane.rowIndex="2" spacing="10">
+                    <children>
+
+                        <GridPane hgap="105" vgap="5">
+                            <children>
+                                <Label text="Frame width" id="label" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                                <TextField fx:id="frameWidthField" id="textfield" prefWidth="50" maxWidth="50"
+                                           GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+
+                                <Label text="Frame Height" id="label" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                                <TextField fx:id="frameHeightField" prefWidth="50" maxWidth="50"
+                                           GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                            </children>
+                        </GridPane>
+
+                    </children>
+                </HBox>
+
+                <HBox prefWidth="320" GridPane.columnIndex="0" GridPane.rowIndex="3" spacing="10">
+                    <children>
+
+                        <GridPane hgap="50" vgap="5">
+                            <children>
+                                <Label text="Max. horizontal frames" id="label" GridPane.columnIndex="0"
+                                       GridPane.rowIndex="0"/>
+                                <TextField fx:id="maxHFramesField" id="textfield" prefWidth="50" maxWidth="50"
+                                           GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+
+                                <Label text="Max. vertical frames" id="label" GridPane.columnIndex="1"
+                                       GridPane.rowIndex="0"/>
+                                <TextField fx:id="maxVFramesField" prefWidth="50" maxWidth="50"
+                                           GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                            </children>
+                        </GridPane>
+
+                    </children>
+                </HBox>
+
+                <HBox prefWidth="320" GridPane.columnIndex="0" GridPane.rowIndex="4" spacing="10">
+                    <children>
+
+                        <GridPane hgap="120" vgap="5">
+                            <children>
+                                <Label text="FPS" id="label" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                                <TextField fx:id="fpsField" id="textfield" prefWidth="50" maxWidth="50"
+                                           GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+
+                                <Button text="Preview" fx:id="previewButton" onAction="#onPreviewButtonAction"
+                                        id="button" GridPane.columnIndex="1"
+                                        GridPane.rowIndex="1"/>
+                            </children>
+                        </GridPane>
+
+                    </children>
+                </HBox>
+
+                <HBox prefWidth="320" GridPane.columnIndex="0" GridPane.rowIndex="5" spacing="10">
+                    <children>
+                        <Label text="" fx:id="errorLabel" id="errorLabel"/>
+                    </children>
+                </HBox>
+
+            </children>
+
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+
+        </GridPane>
+
+        <Canvas fx:id="canvas" width="340" height="375" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+    </children>
+
+    <columnConstraints>
+        <ColumnConstraints percentWidth="50"/>
+        <ColumnConstraints percentWidth="50"/>
+    </columnConstraints>
+
+</GridPane>

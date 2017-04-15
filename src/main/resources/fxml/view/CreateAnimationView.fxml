@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<GridPane xmlns:fx="http://javafx.com/fxml" stylesheets="/css/view.css" fx:id="gridPane" alignment="CENTER" hgap="5"
+          vgap="5">
+
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"></Insets>
+    </padding>
+
+    <children>
+        <Label text="Animation name" id="label" fx:id="animNameFieldLabel" GridPane.columnIndex="0"
+               GridPane.rowIndex="0"/>
+        <TextField id="textfield" fx:id="animNameField" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <Button onAction="#createAnimation" text="Create animation" id="button" fx:id="createAnimButton"
+                GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <Label text="" id="errorLabel" fx:id="errorLabel" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    </children>
+
+</GridPane>
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+
+<GridPane stylesheets="/css/iconview.css" xmlns:fx="http://javafx.com/fxml" alignment="CENTER" hgap="0" vgap="30"
+          prefWidth="680" prefHeight="400">
+
+    <children>
+        <FontAwesomeIconView styleClass="bigIcon" id="icon" fx:id="icon" glyphName="EXCLAMATION_TRIANGLE"
+                             GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.halignment="CENTER"
+                             GridPane.valignment="CENTER"/>
+        <Label text="Oops, there went something wrong" id="label" fx:id="label" GridPane.columnIndex="0"
+               GridPane.rowIndex="1" GridPane.halignment="CENTER"
+               GridPane.valignment="CENTER"/>
+    </children>
+
+</GridPane>

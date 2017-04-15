@@ -1,0 +1,44 @@
+.label {
+    -fx-font: 12px Arial;
+}
+
+#errorLabel {
+    -fx-font: 12px Arial;
+    -fx-text-fill: #B22222;
+    -fx-fill: #B22222;
+}
+
+#titleLabel {
+     -fx-font: 16px Arial;
+}
+
+.text-field {
+    -fx-background-color: #fff;
+    -fx-border-color: #ddd;
+    -fx-text-box-border: transparent;
+    -fx-focus-color: 0;
+}
+
+.text-field:focused {
+    -fx-background-color: #eee;
+    -fx-border-color: #ddd;
+    -fx-text-box-border: transparent;
+    -fx-focus-color: 0;
+}
+
+.button {
+    -fx-background-color: #ddd;
+    -fx-background-radius: 50;
+    -fx-text-fill: #777;
+   -fx-font: 12px Arial;
+}
+
+.button:hover {
+    -fx-background-color: #ccc;
+}
+
+.button:pressed {
+    -fx-background-color: #ccc;
+    -fx-text-fill: #404040;
+    -fx-outline: 0;
+}

@@ -1,2 +1,2 @@
-# Spritesheet-Preview-Tool
-A small schoolproject.
+# Spritesheet Preview Tool
+A small JavaFX schoolproject.
